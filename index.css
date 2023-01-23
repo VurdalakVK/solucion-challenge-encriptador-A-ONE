@@ -1,0 +1,342 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+main{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+
+.logo{
+    position:absolute;
+    z-index: 2;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    filter: drop-shadow(2px 2px 3px rgb(2, 255, 15));
+    opacity: 0.7;
+}
+
+.titulo{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    filter: drop-shadow(2px 2px 12px rgb(2, 255, 15));
+    color: rgb(2, 255, 15);
+    margin-left: 900px;
+    margin-top: 100px;
+    font-weight: lighter;
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+::placeholder{
+    color: rgba(2, 255, 15, 0.788);
+    opacity: 0.6;
+}
+
+.entradaTexto{
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-top: 300px;
+    margin-left: 680px;
+}
+
+#textoOrigen{
+    border: none;
+    background: none;
+    resize: none;
+    margin-top: 20px;
+    text-transform: lowercase;
+    text-align: center;
+    width: 500px;
+    color: rgba(2, 255, 15, 0.788);
+    font-weight: bold;
+}
+
+#textoOrigen:focus{
+    outline: none;
+}
+
+#textoOrigen::placeholder{
+    text-align: end;
+    font-size: 25px;
+    width: 400px;
+    height: 250px;
+    background-image: url(imagen/origenplaceholder.gif);
+    background-repeat: no-repeat;
+    background-size: 290px 290px;
+    background-position-x: 110px;
+}
+
+.icono{
+    display: flex;
+    position: relative;
+    padding-inline: 235px;
+    opacity: 0.6;
+    width: 35px;
+    margin-top: 20px;
+}
+
+.texto1{
+    position: relative;
+    text-align: center;
+    color: rgba(2, 255, 15, 0.788); 
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.botones1{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 43px;
+    opacity: 0.6;
+}
+
+#botonEncriptar{
+    background: rgb(59, 252, 1);
+    border-radius: 5px;
+    border-top-right-radius:10% 30%;
+    border-bottom-left-radius: 10% 30%;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 1.5s all;
+}
+
+#botonEncriptar:hover{
+    background: black;
+    color: rgb(59, 252, 1);
+    transform: scale(1.1);
+}
+
+#botonDesencriptar{
+    background: rgb(59, 252, 1);
+    border-radius: 5px;
+    border-top-right-radius:10% 30%;
+    border-bottom-left-radius: 10% 30%;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 200px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 1.5s all;
+}
+
+#botonDesencriptar:hover{
+    background: black;
+    color: rgb(59, 252, 1);
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+.salidaTexto{
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-top: 300px;
+}
+
+#textoFinal{
+    border: none;
+    background: none;
+    resize: none;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 400px;
+    position: fixed;
+    text-align: center;
+    color: rgba(2, 255, 15, 0.788);
+    font-weight: bold;
+}
+
+#textoFinal::placeholder{
+    font-size: 21px;
+    width: 400px;
+    height: 250px;
+    background-image: url(imagen/finalplaceholder.gif);
+    background-repeat: no-repeat;
+    background-size: 290px 290px;
+    background-position: center 7px;
+}
+
+#textoFinal:focus{
+    outline: none;
+}
+
+.botones2{
+    display: flex;
+    position: relative;
+    margin-top: 390px;
+    margin-left: 160px;
+    opacity: 0.6;
+}
+
+#botonCopiar{
+    display: none;
+    background: rgb(59, 252, 1);
+    border-radius: 5px;
+    border-top-right-radius:10% 30%;
+    border-bottom-left-radius: 10% 30%;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    transition: 1.5s all;
+}
+
+#botonCopiar:hover{
+    background: black;
+    color: rgb(59, 252, 1);
+    transform: scale(1.1);
+}
+
+#botonPegar{
+    display: none;
+    background: rgb(59, 252, 1);
+    border-radius: 5px;
+    border-top-right-radius:10% 30%;
+    border-bottom-left-radius: 10% 30%;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 1.5s all;
+}
+
+#botonPegar:hover{
+    background: black;
+    color: rgb(59, 252, 1);
+    transform: scale(1.1);
+}
+
+#botonLimpiar{
+    display: none;
+    background: rgb(59, 252, 1);
+    border-radius: 5px;
+    border-top-right-radius:10% 30%;
+    border-bottom-left-radius: 10% 30%;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 1.5s all;
+}
+
+#botonLimpiar:hover{
+    font-variant-position: inherit;
+    background: black;
+    color: rgb(59, 252, 1);
+    transform: scale(1.1);
+}
+
+
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 42, 42);
+    opacity: 0.7;
+}
+
+/* Intento de responsive XD */
+
+
+@media screen and (max-width: 390px) {
+
+    .titulo{
+        padding-top: 80px;
+    }
+
+    .entradaTexto{
+        padding-top: 50%;
+        padding-left: 30%;
+    }
+
+    .salidaTexto{
+        padding-top: 700px;
+    }
+
+    video{
+        scale: 3;
+    }
+
+    .capa{
+        scale: 3;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .titulo{
+        position: absolute;
+        top: 10px;
+        left: -60px;
+    }
+
+    .entradaTexto{
+        position: absolute;
+        top: 55px;
+        left: -20px;
+        
+    }
+
+    .salidaTexto{
+        position: absolute;
+        top: 55px;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .titulo{
+        margin-top: 10%;
+        margin-left: 25%;
+        scale: 0.8;
+    }
+
+    .entradaTexto{
+        margin-top: 10%;
+        margin-left: 8%;
+        scale: 0.8;
+    }
+
+    .salidaTexto{
+        margin-top: 10%;
+        scale: 0.8;
+    }
+}
