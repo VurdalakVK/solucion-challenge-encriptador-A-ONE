@@ -14,37 +14,56 @@
 </head>
 <body>
     <main>
-        <div class="logo">
-            <img src="imagen/logo-aluraespanhol.svg" alt="logo alura latam">
-        </div>
-        <div class="titulo">
-            <p>Encriptador</p>
-        </div>
-            <div class="entradaTexto">
-                <textarea name="" id="textoOrigen" placeholder="> Ingresa el texto aquí" autofocus cols="30" rows="10"></textarea>
-                <img class="icono" src="imagen/icon.gif" alt="">
-                <P class="texto1"> 
-                    Solo letras minúsculas y sin acentos
-                </P>
-                <div class="botones1">
-                    <button type="button" id="botonEncriptar">Encriptar</button>
-                    <button type="button" id="botonDesencriptar">Desencriptar</button>
+        <header>
+            <div class="logo">
+                <img src="imagen/logo-aluraespanhol.svg" alt="logo alura latam">
+            </div>
+        </header>
+        <section class="encriptador__titulo">
+            <div class="titulo">
+                <p>Encriptador</p>
+            </div>
+        </section>
+        <section class="encriptador__text">
+            <div class="encriptador__app">
+                <div class="encriptador__entrada">
+                    <textarea name="" id="textoOrigen" placeholder="» Ingresa el texto aquí" autofocus cols="30" rows="10"></textarea>
+                    <div class="encriptador__entrada__footer">
+                        <img class="icono" src="imagen/icon.gif" alt="">
+                        <P class="texto1"> 
+                            Solo letras minúsculas y sin acentos
+                        </P>
+                        <div class="encriptador__entrada__botones">
+                            <button type="button" id="botonEncriptar">Encriptar</button>
+                            <button type="button" id="botonDesencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="encriptador__salida">
+                    <textarea name="" id="textoFinal" placeholder="» Ningún mensaje fue encontrado" cols="30" rows="10"></textarea>
+                    <div class="encriptador__salida__footer">
+                        <div class="encriptador__salida__botones">
+                            <button type="button" id="botonCopiar">Copiar</button>
+                            <button type="button" id="botonPegar">Pegar</button>
+                            <button type="button" id="botonLimpiar">Limpiar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="salidaTexto">
-                <textarea name="" id="textoFinal" placeholder="> Ningún mensaje fue encontrado" cols="30" rows="10"></textarea>
-                <div class="botones2">
-                    <button type="button" id="botonCopiar">Copiar</button>
-                    <button type="button" id="botonPegar">Pegar</button>
-                    <button type="button" id="botonLimpiar">Limpiar</button>
-                </div>
+            
+        </section>
+        <section class="encriptador__footer">
+            <div class="footer">
+                <img class="githublink" src="imagen/git.gif" href="https://github.com/VurdalakVK/solucion-challenge-encriptador-A-ONE">
             </div>
+        </section>
             <video muted autoplay loop>
                 <source src="media/fondo.webm" type="video/webm">
             </video>
             <div class="capa">
             </div>
     </main>
+    
     
 </body>
 </html>
